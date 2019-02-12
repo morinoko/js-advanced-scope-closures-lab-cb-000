@@ -1,9 +1,14 @@
 function produceDrivingRange(rangeInBlocks) {
   return function(startBlock, endBlock) {
-    const start = startBlock.slice(0, startBlock.length - 2);
-    const end = endBlock.slice(0, startBlock.length - 2);
-
-    return (Math.abs(start - end)) <= rangeInBlocks ? true : false;
+    const start = parseInt(startBlock, 10);
+    const end = parseInt(endBlock, 10);
+    const blocksToTravel = Math.abs(start - end);
+    
+    if (blocksToTravel <= rangeInBlocks) {
+      return ``;
+    } else {
+      return ``;
+    }
   }
 }
 
