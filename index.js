@@ -1,13 +1,13 @@
-function produceDrivingRange(rangeInBlocks) {
+function produceDrivingRange(blockRange) {
   return function(startBlock, endBlock) {
     const start = parseInt(startBlock, 10);
     const end = parseInt(endBlock, 10);
     const blocksToTravel = Math.abs(start - end);
 
-    if (blocksToTravel <= rangeInBlocks) {
-      return `within range by ${rangeInBlocks - blocksToTravel}`;
+    if (blocksToTravel <= blockRange) {
+      return `within range by ${blockRange - blocksToTravel}`;
     } else {
-      return ``;
+      return `${blocksToTravel - blockRange} blocks out of range`;
     }
   }
 }
