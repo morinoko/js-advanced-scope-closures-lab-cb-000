@@ -1,6 +1,6 @@
 function produceDrivingRange(rangeInBlocks) {
   return function(start, end) {
-    return (Math.abs(start - end)) <= rangeInBlocks ? true : false
+    return (Math.abs(start - end)) <= rangeInBlocks ? true : false;
   }
 }
 
