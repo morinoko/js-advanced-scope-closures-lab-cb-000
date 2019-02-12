@@ -3,7 +3,7 @@ function produceDrivingRange(rangeInBlocks) {
     const start = parseInt(startBlock, 10);
     const end = parseInt(endBlock, 10);
     const blocksToTravel = Math.abs(start - end);
-    
+
     if (blocksToTravel <= rangeInBlocks) {
       return ``;
     } else {
