@@ -5,7 +5,7 @@ function produceDrivingRange(rangeInBlocks) {
     const blocksToTravel = Math.abs(start - end);
 
     if (blocksToTravel <= rangeInBlocks) {
-      return ``;
+      return `within range by ${rangeInBlocks - blocksToTravel}`;
     } else {
       return ``;
     }
